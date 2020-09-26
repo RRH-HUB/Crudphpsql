@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 $host="localhost";
 $username="root";
 $passwd="";
@@ -11,5 +13,4 @@ if(isset($conexion)){
 }else{
     echo"conexion fallida";
 }
- * 
- */
+*/
