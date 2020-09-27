@@ -9,7 +9,7 @@ $sql = "DELETE FROM tareas WHERE id='$id'";
 $resultado=mysqli_query($conexion, $sql);
 if($resultado){
     $_SESSION['borrada']='Tarea borrada con exito';
-    header("Location:index.php");
+    header("Location:views/listarTareas.php");
 }else{
-    header("Location:index.php");
+    header("Location:views/listarTareas.php");
 }
