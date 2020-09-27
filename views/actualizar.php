@@ -1,5 +1,7 @@
 <?php include("../includes/conexion.php") ?>
 <?php include("../includes/header.php") ?>
+
+
 <nav class="navbar navbar-dark bg-dark">
     <div class="container">
         <a href="../index.php" class="navbar-brand">Php Mysql CRUD with Bootstrap</a>
@@ -17,7 +19,10 @@
                 </div>
             <?php } ?>
             <div class="card card-body">
-                <form action="../actualizarController.php" method="POST">
+                <form action="../crearActualizarController.php" method="POST">
+                    <input type="hidden" name="id" value="<?php echo $_SESSION['id'] ?>">
+                    
+
                     <div class="form-group">
                         <input type="text" name="titulo" class="form-control" placeholder="Titulo de la tarea.." autofocus value="<?php echo $_SESSION['nombre'] ?>"></input>
                     </div>

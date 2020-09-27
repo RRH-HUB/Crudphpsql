@@ -17,7 +17,7 @@
                 </div>
             <?php } ?>
             <div class="card card-body">
-                <form action="../crearController.php" method="POST">
+                <form action="../crearActualizarController.php" method="POST">
                     <div class="form-group">
                         <input type="text" name="titulo" class="form-control" placeholder="Titulo de la tarea.." autofocus>
                     </div>
